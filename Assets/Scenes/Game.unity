@@ -396,6 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988244027}
   - component: {fileID: 988244026}
+  - component: {fileID: 988244028}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -470,6 +471,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988244028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988244025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758896cb17d74f44ea3e9dc777a82156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1215380142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -836,10 +849,10 @@ SceneRoots:
   - {fileID: 988244027}
   - {fileID: 1215380142}
   - {fileID: 4094684056921994126}
-  - {fileID: 2127732196}
   - {fileID: 1616372114}
   - {fileID: 430257107}
   - {fileID: 1891157437}
   - {fileID: 545768327}
+  - {fileID: 2127732196}
   - {fileID: 739947071}
   - {fileID: 1960031461}
