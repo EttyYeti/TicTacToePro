@@ -6,12 +6,14 @@ public class Turn : MonoBehaviour
 {
 
     SpriteRenderer spriteRenderer;
+    GameObject gameBoard;
     public Sprite[] images;
 
     // Awake is called to 'initialize' all game components
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        gameBoard = GameObject.Find("Board");
     }
     
     // Start is called before the first frame update
@@ -23,11 +25,13 @@ public class Turn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) //0 is left click
-            {
-                Debug.Log("Left click");
-                spriteRenderer.sprite = images[1];
-            }
+        
+    }
+
+    void OnMouseDown()
+    {
+        int index = gameBoard.GetComponent<GameScript>().PlayerTurn();
+        spriteRenderer.sprite = images[1];
     }
 
 }
